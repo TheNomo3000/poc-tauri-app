@@ -1,0 +1,16 @@
+<main class="container">
+  <h1>Welcome to Tauri + Angular</h1>
+
+  <form class="row" (submit)="greet($event)">
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      placeholder="Enter a name..."
+      aria-label="Name"
+    />
+    <button type="submit">Greet</button>
+  </form>
+
+  <p class="message">{{ message }}</p>
+</main>
